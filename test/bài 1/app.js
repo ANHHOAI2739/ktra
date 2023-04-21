@@ -4,8 +4,8 @@
 
 
 $result.onclick = () => {
-    let a = $a.value;
-    let b = $b.value;
+    let a = $a.value * 1;
+    let b = $b.value * 1;
     let sum = 0;
     if (a > b ) { alert ('không hợp lệ');    
     } else {
