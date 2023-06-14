@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <Header></Header>
       <Nav />
-      {/* <div
+      <div
         style={{
           display: "flex",
           flexDirection: "row",
@@ -32,8 +32,8 @@ function App() {
         <Productcategory />
       </div>
 
-      <Homepage /> */}
-      <Login />
+      <Homepage />
+      {/* <Login /> */}
       <Footer></Footer>
     </div>
   );
