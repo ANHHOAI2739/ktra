@@ -1,4 +1,4 @@
-import { React } from "react";
+import { React, useState } from "react";
 import "../Assets/header.css";
 import { Link } from "react-router-dom";
 
@@ -40,7 +40,7 @@ const Header = () => {
             </Link>
           </button>
           <button className="account-btn">
-            <Link to="/Signin">
+            <Link to="/Register">
               <div>
                 <img
                   src="https://mobilecity.vn/public/assets/img/icon_login.png"
@@ -53,7 +53,9 @@ const Header = () => {
           </button>
         </div>
         <div className="header-opt">
-          <div>GIỎ HÀNG</div>
+          <div>
+            <Link to="/Cart">GIỎ HÀNG</Link>
+          </div>
           <div>EVENTS</div>
           <div>TRA CỨU BH</div>
         </div>

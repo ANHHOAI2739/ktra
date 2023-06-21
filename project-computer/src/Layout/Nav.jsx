@@ -16,10 +16,12 @@ const Nav = () => {
           </Link>
         </div>
         <div className="nav-item">
-          <span className="nav-item">
-            <i class="fas fa-mobile-screen-button"></i>
-          </span>
-          <span>Điện thoại</span>
+          <Link to="/Phone">
+            <span className="nav-item">
+              <i class="fas fa-mobile-screen-button"></i>
+            </span>
+            <span>Điện thoại</span>
+          </Link>
         </div>
         <div className="nav-item">
           <span>

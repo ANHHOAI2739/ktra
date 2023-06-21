@@ -1,27 +1,26 @@
-import "mdb-ui-kit/css/mdb.min.css";
 import "./App.css";
 import Header from "./Layout/Header";
 import Nav from "./Layout/Nav";
 import Footer from "./Layout/Footer";
-import style from "./Assets/style.css";
-import Showproduct from "./Layout/Productcarousel";
 import Homepage from "./Layout/Homepage";
-import Productcategory from "./Layout/Productcategory";
 import Login from "./Layout/Login";
-import Signin from "./Layout/Signin";
+import Register from "./Layout/Register";
 import { Routes, Route } from "react-router-dom";
-import Phone from "./Layout/phone/Phone";
+import Cart from "./Layout/Cart.jsx";
+import Phone from "./Layout/phone/Phone.jsx";
 
 function App() {
   return (
     <div className="App">
       <Header></Header>
       <Nav />
-      {/* <Routes>
+      <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/Login" element={<Login />} />
-        <Route path="/Signin" element={<Signin />} />
-      </Routes> */}
+        <Route path="/Register" element={<Register />} />
+        <Route path="/Cart" element={<Cart />} />
+        <Route path="/Phone" element={<Phone />} />
+      </Routes>
       {/* <Login /> */}
       <Footer></Footer>
     </div>

@@ -1,5 +1,5 @@
 import React from "react";
-const Cardproduct = (props) => {
+const Cardproduct = ({ name, branch, price }) => {
   return (
     <div className="col mb-5" style={{ width: "25%" }}>
       <div className="card h-100">
@@ -20,7 +20,7 @@ const Cardproduct = (props) => {
         <div className="card-body p-4">
           <div className="text-center">
             {/* Product name*/}
-            <h5 className="fw-bolder">Special Item</h5>
+            <h5 className="fw-bolder">{name}</h5>
             {/* Product reviews*/}
             <div className="d-flex justify-content-center small text-warning mb-2">
               <div className="bi-star-fill" />
@@ -30,10 +30,7 @@ const Cardproduct = (props) => {
               <div className="bi-star-fill" />
             </div>
             {/* Product price*/}
-            <span className="text-muted text-decoration-line-through">
-              $20.00
-            </span>
-            $18.00
+            {price}
           </div>
         </div>
         {/* Product actions*/}
